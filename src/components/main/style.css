@@ -1,0 +1,165 @@
+.wrapper {
+  background-color: #f0f2f5;
+  height: 80vh;
+  width: 100vw;
+}
+
+#container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#container .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#container .content .left-content{
+  position: relative;
+}
+
+#container .content .facebook {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+#container .content .facebook img{
+  /*Arrumar a logo do facebook*/
+  position: absolute;
+  content: '';
+
+  top: 1%;
+  left: -7%;
+  
+  /* Gambiarra feita com sucesso */ 
+}
+
+#container .content .facebook p {
+  font-size: 24px;
+}
+
+#container .content .facebook span {
+  margin-top: 5px;
+
+  color: #8a8d91;
+  font-size: 14px;
+}
+
+#container .login-users {
+  display: flex;
+  flex-direction: column;
+}
+
+#container .login-users .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f5f6f7;
+  border: solid #eff1f4;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+#container .login-users .card-wrapper a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+#container .login-users .card-wrapper:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+
+#container .login-input {
+  display: flex;
+  flex-direction: column;
+}
+
+#container .login-input .input-wrapper {
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+
+  padding: 15px;
+  margin: 150px 0 15px 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container .login-input .input-wrapper a{
+  text-decoration: none;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+
+#container .login-input .input-wrapper a:hover{
+  text-decoration: underline;
+}
+
+#container .login-input .input-wrapper input{
+  width: 332px;
+  height: 45px;
+  border-radius: 16px;
+  border: solid 1px gray ;
+  font-size: 16px;
+
+  padding: 5px;
+  margin-bottom: 5px;
+
+  outline: none;
+}
+
+#container .login-input .input-wrapper input:focus{
+  border: solid 1px #1877F2; 
+}
+
+#container .login-input .input-wrapper .btn-entrar{
+  background-color: #1877f2;
+  color: white;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  margin: 8px;
+  width: 332px;
+  border-radius: 6px;
+  border: none;
+
+  cursor: pointer;
+}
+
+#container .login-input .input-wrapper .btn-novaConta{
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 48px;
+  color: white;
+
+  border-radius: 6px;
+  border: none;
+  padding: 0 16px;
+  background-color: #36a420;
+
+  margin: 8px;
+
+  cursor: pointer;
+}
+
+#container .login-input .input-footer{
+  padding: 15px;
+  margin: 10px 0 15px 250px;
+  font-size: 14px;
+}
